@@ -115,8 +115,12 @@ ul {
 }
 
 /* *SIDEBAR */
-.sidebar {
-  padding: 0 1rem;
+.nav-top {
+  margin: 0 1rem;
+}
+
+#John {
+  color: white;
 }
 
 .sidebar li, .nav-bottom div  {
@@ -159,12 +163,17 @@ ul {
 }
 
 /* "HEADER" */
-.sticky {
-  position: sticky;
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100vw - 15rem);
 }
 
 /* TITOLI */
-
+.titoli {
+  margin-top: 7rem;
+}
 
 /* ALBUMS */
 .card {
