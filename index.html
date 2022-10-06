@@ -12,10 +12,10 @@
 
 <body>
   
-  <main class="bg-purple overf-auto c-white flex">
+  <main class="bg-purple c-white flex h-94">
 
     <!-- *INIZIO SIDEBAR -->
-    <nav class="vh-90 bg-black width-15 flex-column sidebar">
+    <nav class="h-94 bg-black width-15 flex-column sidebar">
       <div class="nav-top">
         <img src="./assets/img/logo.svg" class="width-70 padding-t-b">
         <ul>
@@ -140,12 +140,12 @@
       
       <div class="flex wrap">
         <div class="card">
-          <img src="./assets/img/youg.jpeg" alt="">
+          <img src="./assets/img/youg.jpeg" alt="" class="tonda">
           <h3 class="padding-t-b">Lana del Rey</h3>
         </div>
 
         <div class="card">
-          <img src="./assets/img/einaudi.jpeg" alt="">
+          <img src="./assets/img/einaudi.jpeg" alt="" class="tonda">
           <h3 class="padding-t-b">Ludovico Einaudi</h3>
         </div>
       </div>
@@ -155,8 +155,40 @@
   </main>
 
   <!-- *INIZIO FOOTER -->
-  <footer class="vh-10 bg-gray">
+  <footer class="h-6rem bg-gray flex-between-center c-white">
+    
+    <!-- FOOTER SX -->
+    <div class="ft-sx flex-row">
+      <img src="./assets/img/sinister.jpeg">
+      <h4>Sinister</h4>
+      <p>Brano Nome</p>
+      <i class="fa-regular fa-heart"></i>
+      <i class="fa-regular fa-folder"></i>
+    </div>
 
+    <!-- FOOTER CX -->
+    <div class="ft-cx flex-row">
+      <div class="player-top">
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-backward-step"></i>
+        <i class="fa-regular fa-circle-play"></i>
+        <i class="fa-solid fa-forward-step"></i>
+        <i class="fa-solid fa-rotate-right"></i>
+      </div>
+      <div class="player-bottom">
+        <span>0:25</span>
+        <div class="barra riproduzione"></div>
+        <span>4:35</span>
+      </div>
+    </div>
+
+    <!-- FOOTER DX -->
+    <div class="ft-dx flex-row">
+      <i class="fa-solid fa-list-ul"></i>
+      <i class="fa-solid fa-desktop"></i>
+      <i class="fa-solid fa-volume-high"></i>
+      <div class="barra volume"></div>
+    </div>
   </footer>
   <!-- *FINE FOOTER -->
 </body>

@@ -5,6 +5,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  background-color: black;
+}
+
 .bg-black {
   background-color: black;
 }
@@ -39,12 +43,12 @@
   border-radius: 50px;
 }
 
-.vh-90 {
-  height: 90vh;
+.h-94 {
+  height: calc(100vh - 6rem);
 }
 
-.vh-10 {
-  height: 10vh;
+.h-6rem {
+  height: 6rem;
 }
 
 .width-15 {
@@ -60,6 +64,7 @@
 
 .overf-auto {
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .flex {
@@ -74,6 +79,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .flex-row {
@@ -115,7 +126,8 @@ ul {
 }
 
 /* *SIDEBAR */
-.nav-top {
+
+.nav-top, .nav-bottom {
   margin: 0 1rem;
 }
 
@@ -188,4 +200,20 @@ ul {
 
 .card h3, .card p {
   text-align: center;
+}
+
+.tonda {
+  border-radius: 50%;
+}
+
+/* *FOOTER */
+.ft-sx img {
+  width: 10px;
+}
+
+.barra {
+  height: 5px;
+  border: 1px solid #5A5A5A;
+  background-color: #5A5A5A;
+  border-radius: 20px;
 }
