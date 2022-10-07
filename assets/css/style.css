@@ -200,6 +200,7 @@ ul {
   width: calc((100%/6) - 2%);
   margin-right: 1%;
   margin-left: 1%;
+  margin-bottom: 3%;
 }
 
 .card img {
@@ -303,9 +304,13 @@ ul {
     margin-right: 1%;
     margin-left: 1%;
   }
+
+  .volume{
+    width: 40%;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
   .card {
     width: calc((100%/2) - 2%);
     margin-right: 1%;
@@ -340,12 +345,19 @@ ul {
     width: calc(100vw - 3rem);
   }
 
-  .ft-sx, .ft-cx, .ft-dx {
-    transform: scale(0.8);
+  .ft-cx *, .ft-sx *, .ft-dx * {
+    font-size: 10px;
   }
 
   .icone-sx {
     flex-direction: column;
   }
 
+  .riproduzione {
+    width: 100%;
+  }
+  
+  .volume{
+    width: 80%;
+  }
 }
