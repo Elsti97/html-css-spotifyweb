@@ -188,6 +188,7 @@ ul {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 1;
 }
 
 /* TITOLI */
@@ -201,6 +202,22 @@ ul {
   margin-right: 1%;
   margin-left: 1%;
   margin-bottom: 3%;
+}
+
+.photo {
+  position: relative;
+
+}
+
+#play-hover {
+  display: none;
+  color: white;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .card img {
@@ -265,12 +282,19 @@ ul {
   margin: 0.2rem 5%;
 }
 
+.barra {
+  position: relative;
+}
+
 .barra-white {
+  /* position: absolute; */
+  /* display: inline-block; */
   height: 5px;
   border: 1px solid white;
   background-color: white;
   border-radius: 20px;
   width: 40%;
+  align-self: center;
 }
 
 .ft-cx {
@@ -361,3 +385,65 @@ ul {
     width: 80%;
   }
 }
+
+/* **************************************************************** */
+/* HOVER */
+/* **************************************************************** */
+
+.card:hover img {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.card:hover #play-hover {
+  display: block;
+}
+
+h3:hover {
+  cursor: pointer;
+}
+
+.sidebar li:hover, span:hover, .c-gray:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.fa-plus:hover {
+  background-color: white;
+}
+
+.underline:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.button-black:hover, #play-button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.barra:hover {
+  cursor: pointer;
+}
+
+.barra:hover .barra-white {
+  background-color: #ADFC2F;
+  border: #ADFC2F;
+}
+
+.barra:hover .barra-white::after {
+  position: absolute;
+  top: -100%;
+  left: 38%;
+  content: '';
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  align-self: center;
+}
+
+
+
