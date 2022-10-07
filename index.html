@@ -160,24 +160,28 @@
     <!-- FOOTER SX -->
     <div class="ft-sx flex-row">
       <img src="./assets/img/sinister.jpeg">
-      <h4>Sinister</h4>
-      <p>Brano Nome</p>
-      <i class="fa-regular fa-heart"></i>
-      <i class="fa-regular fa-folder"></i>
+      <div>
+        <h4>Sinister</h4>
+        <p class="c-gray">Brano Nome</p>
+      </div>
+      <i class="fa-regular fa-heart c-gray"></i>
+      <i class="fa-regular fa-folder c-gray"></i>
     </div>
 
     <!-- FOOTER CX -->
-    <div class="ft-cx flex-row">
+    <div class="ft-cx flex-column">
       <div class="player-top">
         <i class="fa-solid fa-shuffle"></i>
         <i class="fa-solid fa-backward-step"></i>
-        <i class="fa-regular fa-circle-play"></i>
+        <i class="fa-regular fa-circle-play" id="play-button"></i>
         <i class="fa-solid fa-forward-step"></i>
         <i class="fa-solid fa-rotate-right"></i>
       </div>
-      <div class="player-bottom">
+      <div class="player-bottom flex-between-center">
         <span>0:25</span>
-        <div class="barra riproduzione"></div>
+        <div class="barra riproduzione">
+          <div class="barra-white"></div>
+        </div>
         <span>4:35</span>
       </div>
     </div>
@@ -187,7 +191,9 @@
       <i class="fa-solid fa-list-ul"></i>
       <i class="fa-solid fa-desktop"></i>
       <i class="fa-solid fa-volume-high"></i>
-      <div class="barra volume"></div>
+      <div class="barra volume">
+        <div class="barra-white"></div>
+      </div>
     </div>
   </footer>
   <!-- *FINE FOOTER -->

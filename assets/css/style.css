@@ -37,7 +37,7 @@ body {
 .button-black {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0.5rem 2rem;
-  margin: 2rem 0;
+  margin: 2rem;
   color: white;
   border: 1px solid white;
   border-radius: 50px;
@@ -207,8 +207,24 @@ ul {
 }
 
 /* *FOOTER */
+.ft-sx {
+  align-items: center;
+}
+
+.ft-dx {
+  justify-content: flex-end;
+}
+
+.ft-sx * {
+  margin-left: 1rem;
+}
+
+.ft-dx * {
+  margin-right: 1rem;
+}
+
 .ft-sx img {
-  width: 10px;
+  width: 3rem;
 }
 
 .barra {
@@ -217,3 +233,44 @@ ul {
   background-color: #5A5A5A;
   border-radius: 20px;
 }
+
+.riproduzione {
+  width: 80%;
+}
+
+.volume{
+  width: 30%;
+}
+
+.player-bottom, .player-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-top *, .player-bottom span {
+  margin: 0.2rem 1rem;
+}
+
+.barra-white {
+  height: 5px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 20px;
+  width: 40%;
+}
+
+.ft-cx {
+  width: 40%;
+}
+
+.ft-sx, .ft-dx {
+  width: 30%;
+  align-items: center;
+}
+
+#play-button {
+  font-size: 2rem;
+}
+
+
