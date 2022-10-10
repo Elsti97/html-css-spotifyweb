@@ -209,7 +209,7 @@ ul {
 
 }
 
-#play-hover {
+.play-hover {
   display: none;
   color: white;
   font-size: 4rem;
@@ -395,8 +395,9 @@ ul {
   cursor: pointer;
 }
 
-.card:hover #play-hover {
+.card:hover .play-hover {
   display: block;
+  cursor: pointer;
 }
 
 h3:hover {
